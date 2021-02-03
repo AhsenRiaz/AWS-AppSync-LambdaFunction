@@ -1,0 +1,25 @@
+type Query {
+    welcome : String
+    hello   : String
+}
+
+input ProductInput {
+    name : String
+    price : Int
+}
+
+
+type Mutation{
+    addProduct(product:ProductInput):String
+}
+
+
+choice to what to return . It is same as above but in this schema we are also telling it to what to return 
+type Product {
+    name  : String
+    price : Int
+}
+type Mutation{
+    addProduct(product:ProductInput):Product 
+}
+
